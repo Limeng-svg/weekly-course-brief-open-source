@@ -1,0 +1,31 @@
+<header>
+  <div class="masthead"><span>COURSE / INTELLIGENCE</span><span>CANVAS LMS EDITION</span></div>
+  <div class="eyebrow">适用于使用 Canvas LMS 的大学</div>
+  <h1>Canvas 大学课程看板</h1>
+  <p>把课程内容、tutorial、本周作业与大作业截止时间放在同一个黑色看板里。</p>
+  <div class="platforms"><span>Canvas LMS</span><span>本地文件导入</span><a href="unsw-week-05.html">返回 UNSW 周报 ↗</a></div>
+</header>
+<section class="onboarding" aria-labelledby="import-title">
+  <h2 id="import-title">导入你的课程资料</h2>
+  <p>选择 Canvas 的日历文件（.ics），即可整理作业和日历事项。也可导入课程周报文件（.json），展示已经整理好的 Lecture、Tutorial 与作业说明。</p>
+  <div class="control-row">
+    <label class="field">大学名称<input id="school" value="Canvas 大学" autocomplete="organization"></label>
+    <label class="field">UTC 日期显示时区<input id="zone" value="Australia/Sydney" aria-describedby="zone-help"></label>
+    <label class="field">周报开始日期<input id="week-start" type="date" value="2026-10-12"></label>
+  </div>
+  <small id="zone-help">UTC 日期转换到填写的时区；带有本地时区的日期保留源时区；没有时区的日期保留原值并注明。本周按显示日期筛选。</small>
+  <div class="control-row"><label class="field">选择日历或课程周报<input id="import-file" type="file" accept=".ics,.json,text/calendar,application/json"></label></div>
+  <p id="import-status" role="status" aria-live="polite">文件仅在当前浏览器中读取；尚未连接任何大学账号。</p>
+  <button id="export" type="button" hidden>保存当前整理结果</button>
+</section>
+<section id="canvas-result" hidden></section>
+<section id="source-guide">
+  <h2>Canvas 资料对应的周报板块</h2>
+  <div class="sources-flow">
+    <article><span class="source-number">01 / COURSE CONTENT</span><h3>Lecture 与 Tutorial</h3><p>从 Modules、Pages、Files 和课程录像中核实教学周与内容，按课程整理中文知识点及练习任务。</p></article>
+    <article><span class="source-number">02 / ASSESSMENTS</span><h3>作业与截止时间</h3><p>查看 Assignments、Quizzes 与 Calendar；区分 Due 截止时间和 Available until 访问关闭时间，核对自己的班级或小组日期。</p></article>
+    <article><span class="source-number">03 / COURSE UPDATES</span><h3>课程公告与变更</h3><p>用 Announcements 和 Syllabus 补充延期、临时任务与学期安排，保留原始来源链接。</p></article>
+  </div>
+  <details><summary>如何获得 Canvas 日历文件</summary><p>在 Canvas 的 Calendar 中打开 Calendar Feed，使用该界面提供的下载链接保存 .ics，再在这里选择文件。日历文件不包含讲义全文，不能单靠日历生成课程知识点复盘。</p><p>当前支持一次性日历事项；含重复规则的事项会提示回到 Canvas 核对。</p><div class="sources"><a href="https://community.instructure.com/en/kb/articles/662804-how-do-i-view-the-calendar-ical-feed-to-import-and-subscribe-to-an-external-calendar" target="_blank" rel="noopener noreferrer">Canvas 官方日历指南 ↗</a><a href="https://community.instructure.com/en/kb/articles/660690-how-do-i-view-differentiated-assignments-with-different-due-dates-in-a-course" target="_blank" rel="noopener noreferrer">不同班级截止日期说明 ↗</a></div></details>
+</section>
+<footer>课程资料由各大学 Canvas 提供。此版本已具备本地导入能力；账号登录、讲义读取与每周自动核查需在具体大学入口完成配置。</footer>

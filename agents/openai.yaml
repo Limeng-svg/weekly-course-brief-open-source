@@ -1,0 +1,4 @@
+interface:
+  display_name: "每周课程与作业周报"
+  short_description: "核查课程讲义、tutorial与作业截止时间，生成黑色科技风周报看板"
+  default_prompt: "使用 $weekly-course-brief 核实本学期课程，整理本周 Lecture、Tutorial、本周作业和大作业准确截止时间。"

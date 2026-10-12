@@ -1,0 +1,12 @@
+{
+  "institution": "",
+  "term": "",
+  "last_enrolment_verified": null,
+  "timezone": "",
+  "language": "zh-CN",
+  "portal": "",
+  "courses": [],
+  "weekly_notification": null,
+  "style": "pure-black-tech-cyan",
+  "semester_scope": "Verify the active semester before each run; do not switch semesters automatically."
+}
